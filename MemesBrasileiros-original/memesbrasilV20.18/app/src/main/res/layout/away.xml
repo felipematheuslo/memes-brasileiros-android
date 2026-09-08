@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bandeira">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageview12"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:src="@drawable/away"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center_horizontal" />
+            <Button
+                android:id="@+id/fechaocu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:text="Fecha o cu pra falar comigo"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:stateListAnimator="@null"
+                />
+            <Button
+                android:id="@+id/filhosdaputa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:text="Filhos das puta"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:stateListAnimator="@null"
+                />
+            <Button
+                android:id="@+id/naoaguenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:text="Não aguenta 10 minutos de porrada comigo"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:stateListAnimator="@null"
+                />
+            <Button
+                android:id="@+id/paracomessaporra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:text="Para com essa porra aí, mermão!"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:stateListAnimator="@null"
+                />
+            <Button
+                android:id="@+id/q"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:text="Que\?"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:stateListAnimator="@null"
+                />
+        </LinearLayout>
+    </ScrollView> <!-- away -->
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-7364145551999763/1225050055">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

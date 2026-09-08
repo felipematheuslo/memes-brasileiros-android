@@ -1,0 +1,74 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.olivenbaum.memesbrasil">
+
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+	<application android:allowBackup="true"
+        android:label="Memes Brasileiros - Som"
+        android:icon="@drawable/catsnatal"
+        android:theme="@style/AppTheme">
+
+		<activity
+			android:name=".MainActivity"
+			android:configChanges="orientation|screenSize"
+			android:screenOrientation="portrait"
+			>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".CategoriasClass"
+			android:configChanges="orientation|screenSize"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".RecentesClass"
+			android:configChanges="orientation|screenSize"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".Away"
+			android:configChanges="orientation|screenSize"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".BamBam"
+			android:configChanges="orientation|screenSize"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".Faustao"
+			android:configChanges="orientation|screenSize"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".LeoStronda"
+			android:configChanges="orientation|screenSize"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".OutrosMemes"
+			android:configChanges="orientation|screenSize"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".Serjao"
+			android:configChanges="orientation|screenSize"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".SilvioSantos"
+			android:configChanges="orientation|screenSize"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".Songs"
+			android:configChanges="orientation|screenSize"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".VinDiesel"
+			android:configChanges="orientation|screenSize"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".Papaco"
+			android:configChanges="orientation|screenSize"
+			android:screenOrientation="portrait"/>
+
+	</application>
+
+</manifest>

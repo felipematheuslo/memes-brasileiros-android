@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bandeira">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="center"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#FFF"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:text="Categorias"
+                    android:textSize="32dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/item9"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/meme"
+                    />
+                <ImageView
+                    android:id="@+id/item1"
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/vin"
+                    />
+                <ImageView
+                    android:id="@+id/item3"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/faustao" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/item4"
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/away" />
+                <ImageView
+                    android:id="@+id/item5"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/serjao" />
+                <ImageView
+                    android:id="@+id/item2"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/bambam"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/item7"
+                    android:layout_width="110dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/leostronda" />
+                <ImageView
+                    android:id="@+id/item8"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/racanegra" />
+                <ImageView
+                    android:id="@+id/item6"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/song" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="6dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/item10"
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/papaco" />
+                <ImageView
+                    android:id="@+id/item11"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_height="80dp" />
+                <ImageView
+                    android:id="@+id/item12"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_height="80dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView> <!-- categorias -->
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-7364145551999763/5285279539">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
