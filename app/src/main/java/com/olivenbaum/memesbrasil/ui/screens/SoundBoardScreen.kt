@@ -25,11 +25,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.compose.foundation.layout.navigationBarsPadding
 import com.olivenbaum.memesbrasil.R
 import com.olivenbaum.memesbrasil.audio.SoundPlayer
 import com.olivenbaum.memesbrasil.data.Category
-import com.olivenbaum.memesbrasil.ui.ads.BannerAd
 
 @Composable
 fun SoundBoardScreen(category: Category) {
@@ -65,7 +63,7 @@ fun SoundBoardScreen(category: Category) {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(top = 72.dp),
-            contentPadding = PaddingValues(start = 16.dp, end = 16.dp, top = 8.dp, bottom = 64.dp)
+            contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp)
         ) {
             items(category.sounds) { sound ->
                 Button(
@@ -89,11 +87,5 @@ fun SoundBoardScreen(category: Category) {
                 }
             }
         }
-
-        BannerAd(
-            modifier = Modifier
-                .align(Alignment.BottomCenter)
-                .navigationBarsPadding()
-        )
     }
 }
