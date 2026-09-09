@@ -8,19 +8,40 @@ class SoundPlayer {
 
     private var mediaPlayer: MediaPlayer? = null
 
-    fun play(context: Context, @RawRes soundResId: Int) {
+    fun play(context: Context, @RawRes soundResId: Int, onCompletion: (() -> Unit)? = null) {
         release()
-        mediaPlayer = MediaPlayer.create(context, soundResId)
-        mediaPlayer?.start()
+        try {
+            mediaPlayer = MediaPlayer.create(context, soundResId)?.apply {
+                setOnCompletionListener {
+                    release()
+                    onCompletion?.invoke()
+                }
+                start()
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+            release()
+            onCompletion?.invoke()
+        }
+    }
+
+    fun stop() {
+        release()
     }
 
     fun release() {
-        mediaPlayer?.let {
-            if (it.isPlaying) {
-                it.stop()
+        try {
+            mediaPlayer?.let {
+                if (it.isPlaying) {
+                    it.stop()
+                }
+                it.release()
             }
-            it.release()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        } finally {
+            mediaPlayer = null
         }
-        mediaPlayer = null
     }
 }
+

@@ -68,19 +68,6 @@ object SoundRepository {
                 SoundItem("Valeu por duas ou mais", R.raw.duasoumais),
             )
         ),
-        // === Songs ===
-        Category(
-            name = "Songs",
-            imageResId = R.drawable.song,
-            sounds = listOf(
-                SoundItem("Backyardigans FUNK", R.raw.backyardigans),
-                SoundItem("Dirigindo meu carro FUNK", R.raw.dirigindomeucarro),
-                SoundItem("PROERD", R.raw.proerd),
-                SoundItem("SONIM BLAINE SINIM CLEVIS", R.raw.sonim_blaine_sinim_clevis),
-                SoundItem("Sweet Dreams FUNK", R.raw.sweetdreams),
-                SoundItem("Winx FUNK", R.raw.winx),
-            )
-        ),
         // === Léo Stronda ===
         Category(
             name = "Léo Stronda",
@@ -193,23 +180,5 @@ object SoundRepository {
                 SoundItem("Você fala demais, amigo. Acabei de me aborrecer", R.raw.vcfalademais),
             )
         ),
-    )
-
-    val recentes: Category = Category(
-        name = "Recentes",
-        imageResId = R.drawable.cats,
-        sounds = listOf(
-            SoundItem("É mas eu não vou devolver não", R.raw.devolvernao),
-            SoundItem("Eu to ligado que esse bicho é meu", R.raw.ehmeu),
-            SoundItem("Vai fazer o que?", R.raw.vaifazeroq),
-            SoundItem("Ainda bem. Até um outro dia", R.raw.aindabem),
-            SoundItem("Fala o que você quer de uma vez, caralho!", R.raw.faladeumavez),
-            SoundItem("Falou comigo?", R.raw.faloucomigo),
-            SoundItem("Hey, seu bunda mole!", R.raw.heyseubundamole),
-            SoundItem("Não, gracinha. Falei com a puta que te pariu", R.raw.faleicomapqp),
-            SoundItem("Um momento, amigo!", R.raw.ummomentoamigo),
-            SoundItem("Um monte de bosta", R.raw.ummontedebosta),
-            SoundItem("Você fala demais, amigo. Acabei de me aborrecer", R.raw.vcfalademais),
-        )
     )
 }
