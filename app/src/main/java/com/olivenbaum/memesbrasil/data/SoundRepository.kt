@@ -25,7 +25,7 @@ object SoundRepository {
             sounds = listOf(
                 SoundItem("Aqui é Bodybuilder", R.raw.bodybuilder),
                 SoundItem("Birl", R.raw.birl),
-                SoundItem("Hora do show, porra!", R.raw.horadoshow),
+                SoundItem("Hora do show, p***a!", R.raw.horadoshow),
                 SoundItem("Tá saindo da jaula o monstro", R.raw.jaula),
                 SoundItem("Trapézio descendente", R.raw.trapezio),
             )
@@ -36,7 +36,7 @@ object SoundRepository {
             imageResId = R.drawable.faustao,
             sounds = listOf(
                 SoundItem("Ce vai morrer", R.raw.morrer),
-                SoundItem("E agora pra desligar essa merda?", R.raw.desligaressamerda),
+                SoundItem("E agora pra desligar essa m***a?", R.raw.desligaressamerda),
                 SoundItem("Errou!", R.raw.errou),
                 SoundItem("Oh louco, meu!", R.raw.olokomeu),
                 SoundItem("Tá pegando fogo, bixo!", R.raw.fogobixo),
@@ -48,10 +48,10 @@ object SoundRepository {
             name = "Away",
             imageResId = R.drawable.away,
             sounds = listOf(
-                SoundItem("Fecha o cu pra falar comigo", R.raw.fechaocu),
-                SoundItem("Filhos das puta", R.raw.filhosdaputa),
+                SoundItem("Fecha o c* pra falar comigo", R.raw.fechaocu),
+                SoundItem("Filhos da p***a", R.raw.filhosdaputa),
                 SoundItem("Não aguenta 10 minutos de porrada comigo", R.raw.naoaguenta),
-                SoundItem("Para com essa porra aí, mermão!", R.raw.paracomessaporra),
+                SoundItem("Para com essa p***a aí, mermão!", R.raw.paracomessaporra),
                 SoundItem("Que?", R.raw.q),
             )
         ),
@@ -73,7 +73,7 @@ object SoundRepository {
             name = "Léo Stronda",
             imageResId = R.drawable.leostronda,
             sounds = listOf(
-                SoundItem("Beleza o cacete, não to bem não", R.raw.tobemnao),
+                SoundItem("Beleza o c***te, não to bem não", R.raw.tobemnao),
                 SoundItem("HAN, HEIN", R.raw.hanhein),
                 SoundItem("Ih, vou chorar", R.raw.vouchorar),
                 SoundItem("Monstro não chora", R.raw.naochora),
@@ -94,6 +94,21 @@ object SoundRepository {
                 SoundItem("Ta chorando ou tá fingindo?", R.raw.chorandooufingindo),
             )
         ),
+        // === Papaco ===
+        Category(
+            name = "Papaco",
+            imageResId = R.drawable.papaco,
+            sounds = listOf(
+                SoundItem("Ainda bem. Até um outro dia", R.raw.aindabem),
+                SoundItem("Fala o que você quer de uma vez, c***lho!", R.raw.faladeumavez),
+                SoundItem("Falou comigo?", R.raw.faloucomigo),
+                SoundItem("Hey, seu bunda mole!", R.raw.heyseubundamole),
+                SoundItem("Não, gracinha. Falei com a p*** que te pariu", R.raw.faleicomapqp),
+                SoundItem("Um momento, amigo!", R.raw.ummomentoamigo),
+                SoundItem("Um monte de b***a", R.raw.ummontedebosta),
+                SoundItem("Você fala demais, amigo. Acabei de me aborrecer", R.raw.vcfalademais),
+            )
+        ),
         // === Outros Memes ===
         Category(
             name = "Outros Memes",
@@ -102,12 +117,11 @@ object SoundRepository {
                 SoundItem("Acertou, mizeravi", R.raw.mizeravi),
                 SoundItem("Ah vá, é mesmo?", R.raw.ahva),
                 SoundItem("Ai, ai (Choque do Lasier)", R.raw.choque),
-                SoundItem("Ai meu cu", R.raw.ai_meu_cu),
-                SoundItem("Bicho piruleta", R.raw.piruleta),
+                SoundItem("Ai meu c*", R.raw.ai_meu_cu),
                 SoundItem("Cachorro? Que cachorro o que!", R.raw.cachorro),
                 SoundItem("Cagado de fome", R.raw.cagado),
                 SoundItem("Carai Borracha, mano", R.raw.caraiborracha),
-                SoundItem("Carai eu sou um merda, mermão", R.raw.souummerda),
+                SoundItem("Carai eu sou um m***a, mermão", R.raw.souummerda),
                 SoundItem("Carlos Alberto (Risada)", R.raw.carlosalberto),
                 SoundItem("Ce acredita", R.raw.ceacredita),
                 SoundItem("Ce é fei hein fih", R.raw.fei),
@@ -124,20 +138,15 @@ object SoundRepository {
                 SoundItem("E só", R.raw.eso),
                 SoundItem("Eu não entendi o que ele falou", R.raw.oqelefalou),
                 SoundItem("Eu não to louco", R.raw.naotolouco),
-                SoundItem("Eu quero dormir, porra", R.raw.dormir),
-                SoundItem("Eu quero que você se foda", R.raw.sefoda),
-                SoundItem("Eu sou o Dougras", R.raw.souodougras),
+                SoundItem("Eu quero dormir, p***a", R.raw.dormir),
+                SoundItem("Eu quero que você se f***a", R.raw.sefoda),
                 SoundItem("Eu sou rica!", R.raw.sourica),
-                SoundItem("Eu sou rolezeira", R.raw.rolezeira),
-                SoundItem("Eu sou uma foca", R.raw.souumafoca),
                 SoundItem("Eu to ligado que esse bicho é meu", R.raw.ehmeu),
                 SoundItem("Eu vou cair", R.raw.voucair),
                 SoundItem("Fala fiote", R.raw.falafiote),
-                SoundItem("Gemidão do WhatsApp", R.raw.gemendo),
                 SoundItem("Hardcore (Everson Zoio)", R.raw.harcore),
                 SoundItem("Irineu", R.raw.irineu),
                 SoundItem("Isso aqui é uma porcaria", R.raw.porcaria),
-                SoundItem("Isso é uma bixona", R.raw.bixona),
                 SoundItem("Legal! Bem louco", R.raw.legal),
                 SoundItem("Mais ou menos", R.raw.maisoumenos),
                 SoundItem("Mas o que é isso?", R.raw.masoq),
@@ -154,30 +163,12 @@ object SoundRepository {
                 SoundItem("Ó as ideia vei (Everson Zoio)", R.raw.asideia),
                 SoundItem("Olá Marilene", R.raw.olamarilene),
                 SoundItem("Pesadão", R.raw.pesadao),
-                SoundItem("Que merda, hein! Sabia não", R.raw.sabianao),
-                SoundItem("Que viadão bonito, hein!", R.raw.viadaobonito),
+                SoundItem("Que m***a, hein! Sabia não", R.raw.sabianao),
                 SoundItem("Quero café!", R.raw.querocafe),
-                SoundItem("Seu buceta", R.raw.seubuceta),
-                SoundItem("Tá uma porra", R.raw.taumaporra),
-                SoundItem("Vá a merda, porra!", R.raw.vaamerda),
+                SoundItem("Tá uma p***a", R.raw.taumaporra),
+                SoundItem("Vá a m***a, p***a!", R.raw.vaamerda),
                 SoundItem("Vai fazer o que?", R.raw.vaifazeroq),
                 SoundItem("Você é burro, cara", R.raw.burro),
-                SoundItem("Você que fuma maconha. Você vai morrer antes do Natal", R.raw.vocequefuma),
-            )
-        ),
-        // === Papaco ===
-        Category(
-            name = "Papaco",
-            imageResId = R.drawable.papaco,
-            sounds = listOf(
-                SoundItem("Ainda bem. Até um outro dia", R.raw.aindabem),
-                SoundItem("Fala o que você quer de uma vez, caralho!", R.raw.faladeumavez),
-                SoundItem("Falou comigo?", R.raw.faloucomigo),
-                SoundItem("Hey, seu bunda mole!", R.raw.heyseubundamole),
-                SoundItem("Não, gracinha. Falei com a puta que te pariu", R.raw.faleicomapqp),
-                SoundItem("Um momento, amigo!", R.raw.ummomentoamigo),
-                SoundItem("Um monte de bosta", R.raw.ummontedebosta),
-                SoundItem("Você fala demais, amigo. Acabei de me aborrecer", R.raw.vcfalademais),
             )
         ),
     )

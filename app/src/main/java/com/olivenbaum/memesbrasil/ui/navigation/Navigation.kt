@@ -54,9 +54,10 @@ fun AppNavigation() {
             modifier = Modifier.fillMaxSize(),
             containerColor = Color.Transparent,
             bottomBar = {
-                BannerAd(
-                    modifier = Modifier.navigationBarsPadding()
-                )
+                // Banner de anúncio comentado temporariamente para capturas de tela da loja
+                // BannerAd(
+                //     modifier = Modifier.navigationBarsPadding()
+                // )
             }
         ) { innerPadding ->
             NavHost(
